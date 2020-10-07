@@ -19,4 +19,5 @@ var compileSass = function (target, done) {
 module.exports = {
     commonSass: (cb) => { return compileSass('common', cb) },
     appSass: (cb) => { return compileSass('app', cb); },
+    appMobileSass: function (cb) { return compileSass('app_mobile', cb); },
 };
